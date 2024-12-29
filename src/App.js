@@ -16,7 +16,7 @@ function App()
     <div>
         <BrowserRouter>
         <Routes>
-        <Route path='/' element={<Logins users={users} setusers={setusers}/>}></Route>
+        <Route path='/' element={<Login users={users} setusers={setusers}/>}></Route>
         <Route path='/signup' element={<Signup users={users} setusers={setusers}/>}></Route>
         <Route path='/landing' element={<Landing/>}></Route>
         </Routes>
@@ -25,4 +25,4 @@ function App()
     )
 }
 
-root.render(<App/>)
+export default App
